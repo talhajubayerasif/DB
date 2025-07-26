@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 20px;
+}
+
+.quiz-container {
+    background-color: white;
+    width: 600px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.question {
+    margin-bottom: 25px;
+}
+
+    .question p {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    /* Label style */
+    .question label {
+        display: block;
+        position: relative;
+        padding: 12px 20px;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        margin-top: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s, border-color 0.3s;
+    }
+
+    /* Hide the radio button */
+    .question input[type="radio"] {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+        /* Style when selected */
+        .question input[type="radio"]:checked + span {
+            background-color: #d6eaff;
+            border-color: #007bff;
+        }
+
+    /* Optional: Add a slight hover effect */
+    .question label:hover {
+        border-color: #888;
+    }
+
+/* Button style */
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .submit-btn:hover {
+        background-color: #0056b3;
+    }
